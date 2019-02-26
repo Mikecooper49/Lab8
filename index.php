@@ -1,17 +1,5 @@
 <?php
 
-include("dbConnect.php");
-
-$sql_query = "SELECT * FROM marvelmovies";
-$result = $db->query($sql_query);
-while ($row = $result->fetch_array()){
-    echo "<p>" . $row['title'];
-}
-
-$result->close();
-// close connection to database
-$db->close();
-
 ?>
 
 <!DOCTYPE html>
@@ -21,6 +9,11 @@ $db->close();
     <title>Index</title>
 </head>
 <body>
+
+<a href = "DisplayAllMovies.php"> Display All Movies</a><br>
+<a href = "DisplayAllXmenMovies.php"> Display All X-Men Movies</a><br>
+<a href = "DisplayMoviesAfter2010.php"> Display All Movies Post 2010</a><br>
+<a href = "DisplayMoviesMarvelStud.php"> Display All Movies from Marvel Studios</a><br>
 
 </body>
 </html>

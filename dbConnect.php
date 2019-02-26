@@ -6,10 +6,10 @@
  * Time: 11:07
  */
 
-define('DB_SERVER', 'CSDM-WEBDEV');
-define ('DB_USERNAME','1808760' );
-define('DB_PASSWORD', '1808760');
-define('DB_DATABASE', 'db1808760_cmm007');
+define('DB_SERVER', 'localhost:8889');
+define ('DB_USERNAME','mike' );
+define('DB_PASSWORD', 'pepit01');
+define('DB_DATABASE', 'marvelmovies');
 
 $db = mysqli_connect(DB_SERVER,
     DB_USERNAME, DB_PASSWORD,

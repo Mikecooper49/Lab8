@@ -2,7 +2,7 @@
 
 include("dbConnect.php");
 
-$sql_query = "SELECT * FROM marvelmovies WHERE title LIKE 'X-men%'";
+$sql_query = "SELECT * FROM marvelmovies WHERE productionStudio LIKE 'Marvel%'";
 $result = $db->query($sql_query);
 while ($row = $result->fetch_array()){
     echo "<p>" . $row['marvelMovieID'] .   "  " . $row['title' ] . "  " . $row['yearReleased'] . "  ".
